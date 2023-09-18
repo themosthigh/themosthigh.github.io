@@ -1,4 +1,5 @@
 ---
+import HeaderLink from "./HeaderLink.astro";
 const routes = [
 	{
 		href: "/",
@@ -12,11 +13,11 @@ const routes = [
 ---
 
 <header class="border-gradient sticky top-0 z-10 bg-black/90 backdrop-blur-lg">
-	<nav class="p-4 flex gap-8 max-w-screen-lg mx-auto">
+	<nav class="p-4 flex gap-8 max-w-screen-lg mx-auto lg:justify-center">
 		{
-			routes.map(({ href, label }, index) => {
-				return <a href={href}> {label} </a>;
-			})
+			routes.map(({ href, label }, index) => (
+				<HeaderLink href={href} label={label} />
+			))
 		}
 	</nav>
 </header>

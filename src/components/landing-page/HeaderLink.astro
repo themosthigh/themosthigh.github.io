@@ -1,0 +1,11 @@
+---
+import { twJoin, twMerge } from "tailwind-merge";
+const { href, label } = Astro.props;
+const currentPath = Astro.url.pathname;
+
+const active = currentPath === href;
+---
+
+<a href={href} class={twMerge("text-gray-500", active ? "text-white" : "")}>
+	{label}</a
+>
