@@ -2,6 +2,15 @@ import type { TechnicalExperience } from "./types";
 
 export const technicalExperience: TechnicalExperience[] = [
 	{
+		technology: "Astro",
+		description: "JS framework that I learnt overnight to build this website",
+		icon: "skill-icons:astro",
+		tags: ["web"],
+		expertiseRating: 5,
+		preferenceRating: 4,
+		projects: [],
+	},
+	{
 		technology: "JavaScript",
 		description:
 			"General-purpose OOP programming language for the web, mobile and server",
