@@ -1,0 +1,22 @@
+---
+import { technicalExperience } from "../../constants/experience";
+---
+
+<div class="border-gradient"></div>
+
+<div class="px-4 py-8 flex flex-col gap-8">
+	<h2 class="text-4xl uppercase font-black">Experience</h2>
+
+	<div class="p-4 grid gap-[1px] grid-cols-cards">
+		{
+			technicalExperience.map(e => (
+				<div class="bg-black text-white/50 text-sm">
+					<p class="font-bold text-xl text-white"> {e.technology}</p>
+					<p>{e.description}</p>
+					<p>Proficiency : {e.expertiseRating}/5</p>
+					<p>Preference : {e.preferenceRating}/5</p>
+				</div>
+			))
+		}
+	</div>
+</div>

@@ -1,0 +1,44 @@
+---
+import HeroImage from "../components/landing-page/HeroImage.astro";
+import LandingPageLayout from "../layouts/LandingPageLayout.astro";
+---
+
+<LandingPageLayout>
+	<main class="p-4 grid gap-8">
+		<h1 class="text-4xl">I'm Marvin</h1>
+
+		<div class="flex flex-col lg:flex-row-reverse gap-8">
+			<HeroImage
+				className="rounded-xl w-full h-fit  sm:max-w-[400px]  md:max-w-[400px]]"
+			/>
+			<div class="flex-1 flex flex-col gap-8">
+				<p>
+					👋 I'm a programming polyglot. As a versatile Full Stack Developer with a
+					passion for crafting exceptional software solutions, I thrive in exploring
+					new technologies (software development is my art form). My expertise spans
+					across various domains, including Web, Mobile, and Backend development.
+				</p>
+				<p>
+					💡 Innovation is at the heart of my work. I excel in Dart programming,
+					particularly with Flutter, and have a strong command over JavaScript and
+					TypeScript. My proficiency extends to frameworks like React, React Native,
+					Vue.js, and Svelte, as well as their meta-frameworks. Additionally, I
+					possess decent skills in Golang, SQL, NoSQL, Java, C/C++, and Python.
+				</p>
+				<p>
+					🌍 I firmly believe in the power of open-source software and actively
+					contribute to the community. Collaborating with fellow developers and
+					exchanging knowledge brings me joy. I'm a free-thinker who appreciates
+					diverse perspectives, making me comfortable working with individuals from
+					all backgrounds.
+				</p>
+				<p>
+					📚 Lifelong learning is a core value for me. I constantly strive to expand
+					my skill set and adapt to new challenges. Staying up-to-date with the
+					latest industry trends and technologies allows me to deliver high-quality
+					solutions that meet evolving user needs.
+				</p>
+			</div>
+		</div>
+	</main>
+</LandingPageLayout>

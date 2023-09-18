@@ -1,0 +1,12 @@
+---
+import { twMerge } from "tailwind-merge";
+const { width, className } = Astro.props;
+---
+
+<img
+	src="/images/marv.jpg"
+	alt="tallestlegacy"
+	class={twMerge("aspect-square", className)}
+	transition:name="hero-image"
+	width={width}
+/>

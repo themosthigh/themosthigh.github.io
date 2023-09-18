@@ -1,24 +1,24 @@
 ---
-
+import IndexLayout from "../layouts/IndexLayout.astro";
+import HeroImage from "../components/landing-page/HeroImage.astro";
+import LandingPageLayout from "../layouts/LandingPageLayout.astro";
+import Experience from "../components/landing-page/Experience.astro";
 ---
 
-<main>
-	<h1>iam:TallestLegacy</h1>
-</main>
+<LandingPageLayout>
+	<main class="bg-black">
+		<div class="flex flex-col justify-center items-center gap-8 h-[80vh]">
+			<HeroImage className="w-[300px] rounded-full" />
+			<h1 class="font-mono font-black text-3xl">
+				{"{{"}iam:<a
+					href="https://gitihub/tallestlegacy"
+					class="text-transparent bg-clip-text bg-gradient-to-r from-[hotpink] to-[magenta] hover:underline"
+					>TallestLegacy</a
+				>{"}}"}
+			</h1>
+		</div>
 
-<style>
-	html,
-	body {
-		all: unset;
-	}
-
-	main {
-		display: flex;
-		background-color: black;
-		color: white;
-		justify-content: center;
-		align-items: center;
-		font-family: monospace;
-		height: 100vh;
-	}
-</style>
+		<!-- Experience -->
+		<Experience />
+	</main>
+</LandingPageLayout>
