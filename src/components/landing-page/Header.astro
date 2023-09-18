@@ -12,7 +12,7 @@ const routes = [
 ];
 ---
 
-<header class="border-gradient sticky top-0 z-10 bg-black/90 backdrop-blur-lg">
+<header class="border-gradient sticky top-0 z-10 bg-black/80 backdrop-blur-lg">
 	<nav class="p-4 flex gap-8 max-w-screen-lg mx-auto lg:justify-center">
 		{
 			routes.map(({ href, label }, index) => (
@@ -21,24 +21,3 @@ const routes = [
 		}
 	</nav>
 </header>
-
-<style is:global>
-	.border-gradient {
-		border-bottom-width: 1px;
-		border-style: solid;
-		border-image: linear-gradient(to right, #fff5, black) 0 1 100%;
-	}
-
-	@media (min-width: 1024px) {
-		.border-gradient {
-			border-image: linear-gradient(
-					to right,
-					black 0%,
-					#fff2 20%,
-					#fff2 80%,
-					black
-				)
-				0 1 100%;
-		}
-	}
-</style>

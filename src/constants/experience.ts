@@ -5,7 +5,7 @@ export const technicalExperience: TechnicalExperience[] = [
 		technology: "JavaScript",
 		description:
 			"General-purpose OOP programming language for the web, mobile and server",
-		icon: "mdi:language-javascript",
+		icon: "skill-icons:javascript",
 		tags: ["programming language", "web", "mobile", "desktop", "backend"],
 		expertiseRating: 5,
 		preferenceRating: 4,
@@ -17,7 +17,7 @@ export const technicalExperience: TechnicalExperience[] = [
 	{
 		technology: "TypeScript",
 		description: "A type-safe version of JS",
-		icon: "mdi:language-typescript",
+		icon: "skill-icons:typescript",
 		tags: ["programming language", "web", "mobile", "desktop", "backend"],
 		expertiseRating: 5,
 		preferenceRating: 5,
@@ -29,7 +29,7 @@ export const technicalExperience: TechnicalExperience[] = [
 
 	{
 		technology: "Go",
-		icon: "mdi:language-go",
+		icon: "skill-icons:golang",
 		tags: ["programming language", "backend"],
 		description: "The best programming language ever made",
 		expertiseRating: 5,
@@ -43,7 +43,7 @@ export const technicalExperience: TechnicalExperience[] = [
 	{
 		technology: "C",
 		description: "Low level systems programming",
-		icon: "mdi:language-c",
+		icon: "skill-icons:c",
 		tags: ["programming language", "systems"],
 		expertiseRating: 4,
 		preferenceRating: 3,
@@ -54,7 +54,7 @@ export const technicalExperience: TechnicalExperience[] = [
 	},
 	{
 		technology: "Rust",
-		icon: "mdi:language-rust",
+		icon: "skill-icons:rust",
 		tags: ["programming language", "backend"],
 		description:
 			"Rust is a multi-paradigm, general-purpose programming language for high and low-level programming",
@@ -73,7 +73,7 @@ export const technicalExperience: TechnicalExperience[] = [
 	},
 	{
 		technology: "SQL",
-		icon: "skill-icons:mysql-light",
+		icon: "skill-icons:mysql-dark",
 		tags: ["database", "data science"],
 		description: "Relations database definition and management language",
 		expertiseRating: 5,
@@ -82,7 +82,7 @@ export const technicalExperience: TechnicalExperience[] = [
 	},
 	{
 		technology: "Java",
-		icon: "skill-icons:java-light",
+		icon: "skill-icons:java-dark",
 		tags: ["programming language", "backend", "mobile"],
 		description:
 			"General purpose programming language for mobile and backend applications",
@@ -92,21 +92,21 @@ export const technicalExperience: TechnicalExperience[] = [
 	},
 	{
 		technology: "Flutter",
-		icon: "skill-icons:flutter-light",
+		icon: "skill-icons:flutter-dark",
 		tags: ["mobile", "cross-platform"],
 		description: "Performant UI library written in the dart programming language",
 		expertiseRating: 3,
 		preferenceRating: 4,
-		projects: ["din"],
+		projects: ["Din (Quran and Sunna) mobile application"],
 	},
 	{
 		technology: "I use Arch BTW!",
-		icon: "mdi:linux",
-		tags: ["desktop", "systems"],
+		icon: "skill-icons:linux-dark",
+		tags: ["desktop", "systems", "open-source"],
 		description:
-			"ArchLinux is a lightweight and flexible Linux distribution that is known for its performance and customization options. It is a popular choice for power users and developers.",
+			"ArchLinux is a lightweight and flexible Linux distribution that is known for its performance and customization options.",
 		expertiseRating: 4,
 		preferenceRating: 5,
-		projects: ["daily driver"],
+		projects: ["Daily driver"],
 	},
 ];

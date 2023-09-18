@@ -4,14 +4,14 @@ import LandingPageLayout from "../layouts/LandingPageLayout.astro";
 ---
 
 <LandingPageLayout>
-	<main class="p-4 grid gap-8 pt-16">
+	<main class="p-4 grid gap-8 py-16">
 		<h1 class="text-4xl">I'm Marvin</h1>
 
 		<div class="flex flex-col lg:flex-row-reverse gap-8">
 			<HeroImage
 				className="rounded-xl w-full h-fit  sm:max-w-[400px]  md:max-w-[400px]]"
 			/>
-			<div class="flex-1 flex flex-col gap-8">
+			<div class="flex-1 flex flex-col gap-8 text-white/60">
 				<p>
 					👋 I'm a programming polyglot. As a versatile Full Stack Developer with a
 					passion for crafting exceptional software solutions, I thrive in exploring
@@ -39,6 +39,13 @@ import LandingPageLayout from "../layouts/LandingPageLayout.astro";
 					solutions that meet evolving user needs.
 				</p>
 			</div>
+		</div>
+
+		<hr />
+
+		<div class="flex items-center justify-center gap-8 font-mono text-white">
+			<iconify-icon icon="logos:archlinux" class="text-8xl"></iconify-icon>
+			<h1 class="4xl">I use Arch BTW</h1>
 		</div>
 	</main>
 </LandingPageLayout>

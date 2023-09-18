@@ -17,6 +17,8 @@ export type TechnicalTag =
 	| "mobile"
 	| "cross-platform"
 	| "desktop"
+	| "open-source"
+	| "source control"
 	| "design"
 	| "systems";
 

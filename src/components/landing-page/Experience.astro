@@ -1,27 +1,39 @@
 ---
 import { technicalExperience } from "../../constants/experience";
-// import Icon  from "../../components/svelte/Icon.svelte";
-import {Icon} from "astro-icon"
 ---
 
 <div class="border-gradient"></div>
 
 <div class="px-4 py-8 flex flex-col gap-8">
-	<h2 class="text-4xl uppercase font-black">Technical Experience</h2>
+	<h2 class="text-4xl font-black mobile uppercase">Technical Experience</h2>
 
-	<div class="p-4 grid gap-4 grid-cols-cards">
+	<div class="p-4 grid gap-8 grid-cols-cards">
 		{
 			technicalExperience.map(e => (
-				<div class="bg-black text-white/50 text-sm flex flex-col gap-4">
+				<div class="bg-black text-white/40 text-sm flex flex-col gap-4">
 					<p class="font-bold text-xl text-white flex items-center gap-4">
-						<!--iconify-icon icon={e.icon} /-->
-						<Icon name={e.icon} class="text-sm" height="2rem" />
+						<iconify-icon icon={e.icon} class="text-3xl" />
 						<span class="flex-1">{e.technology}</span>
 					</p>
-					<div class="flex flex-col gap-2">
+					<div class="flex flex-col gap-1">
 						<p>{e.description}</p>
+						<div class="flex flex-wrap gap-1">
+							{e.tags.map(tag => (
+								<span class="px-2 py-1/2 rounded-full border-white/20 text-white/80 border-[1px]">
+									{" "}
+									{tag}
+								</span>
+							))}
+						</div>
 						<p>Proficiency : {e.expertiseRating}/5</p>
 						<p>Preference : {e.preferenceRating}/5</p>
+						{e.projects.length > 0 && (
+							<div class="text-white/90">
+								{e.projects.map(project => (
+									<p>{project}</p>
+								))}
+							</div>
+						)}
 					</div>
 				</div>
 			))
