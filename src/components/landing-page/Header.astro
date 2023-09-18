@@ -24,24 +24,19 @@ const routes = [
 
 <style>
 	header {
-		background-image: radial-gradient(transparent 1px, var(--bg-color) 1px);
-		background-size: 4px 4px;
 	}
 
 	header::after {
-		background-image: radial-gradient(transparent 4px, var(--bg-color) 4px);
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABxJREFUeNpi+P//PwMIA8FNJgYkwAgSgXEAAgwA8BoHsEna1aoAAAAASUVORK5CYII=);
-		background-size: 0.325rem;
+
+		background-size: 0.25rem;
 		background-repeat: repeat;
 		background-position: bottom;
-		background-color: rgba(0, 0, 0, 80%);
-		backdrop-filter: saturate(50%) blur(0.5rem) brightness(80%);
+		backdrop-filter: blur(0.5rem) brightness(10%);
+
 		content: "";
-		height: 100%;
-		left: 0;
 		position: absolute;
-		top: 0;
-		width: 100%;
+		inset: 0;
 		z-index: -1;
 	}
 
