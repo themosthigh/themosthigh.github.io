@@ -151,7 +151,7 @@ export const technicalExperience: TechnicalExperience[] = [
 	},
 	{
 		technology: "Vue",
-		icon: "skill-icons:vue-dark",
+		icon: "skill-icons:vuejs-dark",
 		tags: ["web", "cross-platform"],
 		description: "'Reactive' JS framework",
 		expertiseRating: 5,
