@@ -31,3 +31,10 @@ export interface TechnicalExperience {
 	preferenceRating: Number;
 	projects: string[];
 }
+
+
+
+// convert Technical tag to a string array
+export function getTags(tag: TechnicalTag): string[] {
+  return [tag];
+}
