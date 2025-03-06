@@ -12,7 +12,11 @@ const config = {
 		adapter: adapter()
 	},
 
-	extensions: ['.svelte', '.svx']
+	extensions: ['.svelte', '.svx'],
+
+	paths: {
+		base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+	}
 };
 
 export default config;
