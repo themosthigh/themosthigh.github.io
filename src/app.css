@@ -1,3 +1,6 @@
+@import './style/colors.css';
+@import './style/typography.css';
+
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
