@@ -1,6 +1,11 @@
-@import './style/colors.css';
-@import './style/typography.css';
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
+/* internal styles */
+@import './style/typography.css';
+@import './style/colors.css';
+
+/* tailwind */
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
