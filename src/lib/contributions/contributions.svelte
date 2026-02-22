@@ -21,7 +21,7 @@
 	};
 </script>
 
-<div class="h-full w-full">
+<div class="h-screen w-screen">
 	<Canvas>
 		{#if weeks.length}
 			<Scene {weeks} />
