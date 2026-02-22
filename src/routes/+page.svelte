@@ -1,6 +1,7 @@
 <script>
 	import Grid from '$lib/containers/grid.svelte';
 	import Section from '$lib/containers/section.svelte';
+	import Contributions from '$lib/contributions/contributions.svelte';
 	import Heading from '$lib/custom/heading.svelte';
 	import Paragraph from '$lib/custom/paragraph.svelte';
 </script>
@@ -13,3 +14,7 @@
 		</Paragraph>
 	</Grid>
 </Section>
+
+<div class="absolute right-0 bottom-0 left-0">
+	<Contributions />
+</div>
