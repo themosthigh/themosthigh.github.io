@@ -28,6 +28,7 @@ jobs:
       - name: build
         env: 
           BASE_PATH: '/${{ github.event.repository.name }}'
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           pnpm run build
 
