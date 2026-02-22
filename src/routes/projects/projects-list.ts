@@ -22,4 +22,11 @@ export const projects: Project[] = [
 		technologies: [Technology.Lua],
 		platforms: [Platform.Neovim],
 	},
+	{
+		name: 'imagen',
+		description: 'An ascii image rendering cli (soon to be TUI)',
+		link: 'https://github.com/themosthigh/imagen',
+		technologies: [Technology.Rust],
+		platforms: [Platform.Linux],
+	},
 ];

@@ -5,7 +5,7 @@ export enum Platform {
 	Neovim = 'Neovim',
 	Linux = 'Linux',
 	Windows = 'Windows',
-	MacOS = 'MacOS'
+	MacOS = 'MacOS',
 }
 
 export enum Technology {
@@ -17,7 +17,8 @@ export enum Technology {
 	React = 'React',
 	Vue = 'Vue',
 	ReactNative = 'React Native',
-	Lua = 'Lua'
+	Lua = 'Lua',
+	Rust = 'Rust',
 }
 
 export type Project = {
