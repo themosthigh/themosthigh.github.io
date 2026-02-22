@@ -1,5 +1,5 @@
 import { json, error } from '@sveltejs/kit';
-import { GITHUB_TOKEN } from '$env/static/private';
+import { GH_TOKEN } from '$env/static/private';
 
 export async function GET() {
 	const query = `query($user: String!) {
@@ -15,7 +15,7 @@ export async function GET() {
 	try {
 		const response = await fetch('https://api.github.com/graphql', {
 			method: 'POST',
-			headers: { Authorization: `Bearer ${GITHUB_TOKEN}` },
+			headers: { Authorization: `Bearer ${GH_TOKEN}` },
 			body: JSON.stringify({ query, variables: { user: 'themosthigh' } }),
 		});
 
