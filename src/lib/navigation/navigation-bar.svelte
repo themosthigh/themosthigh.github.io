@@ -4,13 +4,13 @@
 </script>
 
 <header class="bg-background sticky top-0 z-50 w-full text-white">
-	<nav class="mx-auto flex h-[56px] max-w-7xl grid-cols-12 items-center gap-8 px-4">
+	<nav class="mx-auto flex h-14 max-w-7xl grid-cols-12 items-center gap-8 px-4">
 		{#each routes as route (route.path)}
 			<a
 				class={twMerge(
 					'hover:bg-primary hover:text-background h-fit rounded-xs border border-transparent px-4 py-1 text-xl font-bold',
 					'col-span-2',
-					isActive(route.path) ? 'text-primary border-primary' : '',
+					isActive(route.path) ? 'text-primary _border-primary bg-foreground/10' : '',
 				)}
 				href={route.path}
 			>

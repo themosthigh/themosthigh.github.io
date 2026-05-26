@@ -10,27 +10,31 @@
 <Section>
 	<Grid>
 		{#each projects as project, index (project.name)}
-			<a href={project.link} class="col-span-8 col-start-3 flex flex-col gap-2" target="_blank">
-				<Heading size="h6">
+			<a
+				href={project.link}
+				class="hover:text-primary group hover:bg-foreground/10 col-span-8 col-start-3 flex flex-col gap-4 rounded-md"
+				target="_blank"
+			>
+				<Heading size="h4" class="leading-[120%]">
 					{project.name}
 				</Heading>
 
-				<Paragraph>
+				<Paragraph class="text-white/60 group-hover:text-white">
 					{project.description}
 				</Paragraph>
 
-				<div class="flex items-center gap-2">
+				<div class="flex items-center gap-3 text-xl">
 					{#each project.platforms as platform (platform)}
-						<iconify-icon icon={projectIcons[platform]} class="h-6 w-6"></iconify-icon>
+						<iconify-icon icon={projectIcons[platform]}></iconify-icon>
 					{/each}
 
 					{#each project.technologies as technology (technology)}
-						<iconify-icon icon={projectIcons[technology]} class="h-6 w-6"></iconify-icon>
+						<iconify-icon icon={projectIcons[technology]}></iconify-icon>
 					{/each}
 				</div>
 			</a>
 			{#if index < projects.length - 1}
-				<hr class="col-span-10 col-start-2" />
+				<hr class="col-span-10 col-start-2 opacity-20" />
 			{/if}
 		{/each}
 	</Grid>

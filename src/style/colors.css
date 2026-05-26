@@ -5,3 +5,8 @@
 	--color-foreground: #ddd;
 	--color-primary: #01ff00;
 }
+
+:root {
+	background-color: var(--color-background);
+	color: var(--color-foreground);
+}

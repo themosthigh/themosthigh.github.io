@@ -29,4 +29,11 @@ export const projects: Project[] = [
 		technologies: [Technology.Rust],
 		platforms: [Platform.Linux],
 	},
+	{
+		name: 'hermes',
+		description: '(WIP) A native HTTP client for Linux and MacOS written in Rust and GTK',
+		link: 'https://github.com/themosthigh/hermes',
+		technologies: [Technology.Rust],
+		platforms: [Platform.Linux, Platform.MacOS],
+	},
 ];
