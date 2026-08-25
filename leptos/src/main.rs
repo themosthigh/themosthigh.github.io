@@ -1,7 +1,5 @@
-use leptos::prelude::*;
+use leptos_folio::app::App;
 
 fn main() {
-    leptos::mount::mount_to_body(|| {
-        view! { <p>"Website of the most high"</p> }
-    })
+    leptos::mount::mount_to_body(App)
 }
