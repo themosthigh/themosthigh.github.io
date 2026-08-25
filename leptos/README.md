@@ -1,9 +1,28 @@
-# themosthigh.github.io
+# LeptosFolio
 
-This is my personal website
+### Running the site
 
-### Content plan
+Install trunk
 
-- [ ] Home
-- [ ] Projects
-- [ ] Blog
+```bash
+cargo install --locked binstall
+cargo binstall trunk
+```
+
+Install dependencies
+
+```bash
+pnpm install
+```
+
+Run the site
+
+```bash
+trunk serve
+```
+
+Build the site
+
+```bash
+trunk build
+```
