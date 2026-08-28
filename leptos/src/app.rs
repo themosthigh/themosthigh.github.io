@@ -20,6 +20,7 @@ pub fn App() -> impl IntoView {
                 <main class="flex flex-col flex-1">
                     <Routes fallback=pages::not_found::NotFound>
                         <Route path=path!("/") view=pages::home::HomePage />
+                        <Route path=path!("/projects") view=pages::projects::ProjectsPage />
                     </Routes>
                 </main>
 
