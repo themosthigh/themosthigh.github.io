@@ -1,6 +1,6 @@
 # themosthigh.github.io
 
-This is my personal website
+My personal website: https://themosthigh.dev
 
 ### Content plan
 

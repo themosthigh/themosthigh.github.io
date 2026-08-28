@@ -1,0 +1,9 @@
+[package]
+name = "leptos-folio"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+leptos = { version = "0.8.19", features = ["csr"] }
+leptos_meta = "0.8.6"
+leptos_router = "0.8.15"
