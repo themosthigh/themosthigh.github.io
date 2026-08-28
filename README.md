@@ -1,6 +1,6 @@
 # themosthigh.github.io
 
-My personal website: https://themosthigh.dev
+My personal website: https://themosthigh.dev which is currently down
 
 ### Content plan
 
