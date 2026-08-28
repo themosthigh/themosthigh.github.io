@@ -1,16 +1,19 @@
 use leptos::prelude::*;
 
-use crate::strings;
+use crate::constants::strings;
 
 #[component]
 pub fn Footer() -> impl IntoView {
     view! {
         <footer class="px-8 py-4">
-            <div class="flex flex-col gap-4 justify-start max-w-7xl mx-auto">
-                <h1 class="text-4xl md:text-6xl font-bold text-[calc(min(10rem,10vw))]">
-                    {strings::GH_USERNAME}
-                </h1>
-                <span class="text-sm opacity-50">{strings::GH_BIO}</span>
+            <div class="flex gap-2 justify-start max-w-7xl mx-auto item-center">
+                <div class="flex-1 items-center flex">
+                    <p class="text-sm opacity-50">{strings::GH_BIO}</p>
+                </div>
+
+                <a href=strings::BRAIN_MADE_WEBSITE target="_blank">
+                    <img src=strings::BRAIN_MADE_SVG_WHITE class="w-16 h-16 opacity-50" />
+                </a>
             </div>
         </footer>
     }
