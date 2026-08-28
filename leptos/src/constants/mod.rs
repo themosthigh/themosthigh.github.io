@@ -6,23 +6,33 @@ pub mod strings {
 }
 
 pub mod projects {
-    struct Project {
-        name: &'static str,
-        description: &'static str,
-        github_url: &'static str,
+    pub struct Project {
+        pub name: &'static str,
+        pub description: &'static str,
+        pub github_url: &'static str,
     }
 
     pub fn get_projects() -> Vec<Project> {
         vec![
             Project {
-                name: "My Personal Website",
+                name: "hermes",
+                description: "A native HTTP client written in Rust and GTK.",
+                github_url: "https://github.com/themosthigh/hermes",
+            },
+            Project {
+                name: "din",
+                description: "A quran reader app, Qibla finder, and more for Android, iOS, Linux ... Flutter baby",
+                github_url: "https://github.com/themosthigh/din_flytter",
+            },
+            Project {
+                name: "themosthigh",
                 description: "A simple static website written in Rust using the Leptos framework.",
                 github_url: "https://github.com/themosthigh/themosthigh.github.io",
             },
             Project {
-                name: "DIN",
-                description: "A quran reader app",
-                github_url: "https://github.com/themosthigh/din_dt",
+                name: "darcula.nvim",
+                description: "My darcula Neovim theme",
+                github_url: "https://github.com/themosthigh/darcula.nvim",
             },
         ]
     }

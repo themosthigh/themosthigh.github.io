@@ -10,7 +10,6 @@ pub fn MainNavigationBar() -> impl IntoView {
             <div class="max-w-7xl mx-auto grid grid-cols-[1fr_auto_1fr] items-center">
                 <a href="/" class="flex gap-2 items-center">
                     <span class="text-2xl">{strings::AKU}</span>
-                    <span class="text-sm">{strings::GH_USERNAME}</span>
                 </a>
 
                 <div class="flex items-center justify-center gap-6">
