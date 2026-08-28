@@ -1,10 +1,16 @@
 use leptos::prelude::*;
+use leptos_meta::{provide_meta_context, Title};
 
 use crate::constants::projects;
 
 #[component]
 pub fn ProjectsPage() -> impl IntoView {
+    provide_meta_context();
     view! {
+        <head>
+            <Title text="Projects" />
+        </head>
+
         <div class="px-8 py-16">
             <div class="max-w-7xl mx-auto ">
                 <div class="font-bold grid gap-16">

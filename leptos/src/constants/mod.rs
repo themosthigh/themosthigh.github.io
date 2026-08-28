@@ -3,6 +3,9 @@ pub mod strings {
     pub const GH_USERNAME: &str = "themosthigh";
     pub const GH_BIO: &str = "The struggle for justice is an ongoing and necessary pursuit that should prevail over laws and institutions.";
     pub const GH_URL: &str = "https://github.com/themosthigh";
+
+    pub const BRAIN_MADE_WEBSITE: &str = "https://brainmade.org";
+    pub const BRAIN_MADE_SVG_WHITE: &str = "https://brainmade.org/white-logo.svg";
 }
 
 pub mod projects {
